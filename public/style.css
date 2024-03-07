@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 40px 30px 25px 30px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 2em;
+}
+
+.form-control {
+    background: none;
+    border: 2px solid #23d5ab;
+    border-radius: 10px;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    background-color: #e6f7ff;
+    border-color: #23a6d5;
+    box-shadow: none;
+}
+
+.btn {
+    border: 0;
+    font-weight: 700;
+    margin: 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    padding: 12px 30px;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: #23a6d5;
+    color: white;
+}
+
+.btn-success {
+    background-color: #23d5ab;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+}
