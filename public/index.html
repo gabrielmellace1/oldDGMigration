@@ -15,17 +15,17 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <div class="card card-body text-center">
-                    <h2 class="card-title mb-4">BAG Token Bridge</h2>
+                    <h2 class="card-title mb-4">DG Migration</h2>
                     <div class="mb-3">
-                        <p class="card-text">BAG ETH Balance:<br> <span id="tokenBalanceETH">0</span> BAG</p>
-                        <p class="card-text">BAG Blast Balance:<br>  <span id="tokenBalanceBlast">0</span> BAG</p>
+                        <p class="card-text">Old DG Token Balance:<br> <span id="oldTokenBalance">0</span> DG</p>
+                        <p class="card-text">New DG Token Balance:<br> <span id="newTokenBalance">0</span> DG</p>
                     </div>
                     <div class="mb-3">
                         <input type="text" id="amountToBridge" class="form-control" placeholder="Amount to Bridge" oninput="updateButtonStates()">
                     </div>
                     <div class="mb-3">
-                        <button id="approveButton" class="btn btn-primary" disabled>Approve</button>
-                        <button id="bridgeButton" class="btn btn-success" disabled>Bridge</button>
+                        <button id="approveButton" class="btn btn-primary" disabled>Approve New DG</button>
+                        <button id="migrateButton" class="btn btn-success" disabled>Migrate to New DG</button>
                     </div>
                 </div>
             </div>
